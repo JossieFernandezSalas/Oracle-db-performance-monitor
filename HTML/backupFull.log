@@ -1,0 +1,58 @@
+
+Recovery Manager : Release 21.0.0.0.0 - Production on Vie Nov 18 10:56:56 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+conectado a la base de datos de destino: XE (DBID=2979950771)
+
+RMAN> run {
+2> backup database
+3> SKIP INACCESSIBLE
+4> SKIP OFFLINE;
+5> }
+6> 
+Empezando backup a las 18/11/22
+se utiliza el archivo de control de la base de datos destino en lugar del catálogo de recuperación
+canal asignado: ORA_DISK_1
+canal ORA_DISK_1: SID=276 tipo de dispositivo=DISK
+no se ha podido acceder al archivo de datos 5
+ignorando el archivo inaccesible 5
+no se ha podido acceder al archivo de datos 6
+ignorando el archivo inaccesible 6
+no se ha podido acceder al archivo de datos 8
+ignorando el archivo inaccesible 8
+RMAN-06060: Advertencia: Omitir el archivo de datos afectará a la capacidad de recuperación del tablespace PDB$SEED:SYSTEM
+RMAN-06060: Advertencia: Omitir el archivo de datos afectará a la capacidad de recuperación del tablespace PDB$SEED:SYSAUX
+RMAN-06060: Advertencia: Omitir el archivo de datos afectará a la capacidad de recuperación del tablespace PDB$SEED:UNDOTBS1
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archivo de datos completo
+canal ORA_DISK_1: especificando archivo(s) de datos en el juego de copias de seguridad
+número de archivo de datos de entrada=00001 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\SYSTEM01.DBF
+número de archivo de datos de entrada=00003 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\SYSAUX01.DBF
+número de archivo de datos de entrada=00004 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\UNDOTBS01.DBF
+número de archivo de datos de entrada=00013 nombre=C:\PRUEBA\LAB1\TSU1\TS1.DBF
+número de archivo de datos de entrada=00014 nombre=C:\PRUEBA\LAB1\TSU2\TS2.DBF
+número de archivo de datos de entrada=00015 nombre=C:\PRUEBA\LAB1\TSU3\TS3.DBF
+número de archivo de datos de entrada=00016 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\TS1RESPALDO.DBF
+número de archivo de datos de entrada=00007 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\USERS01.DBF
+canal ORA_DISK_1: iniciando parte 1 en 18/11/22
+canal ORA_DISK_1: finalizando parte 1 en 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\6L1D4K41_213_1_1 etiqueta=TAG20221118T105703 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:01:56
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archivo de datos completo
+canal ORA_DISK_1: especificando archivo(s) de datos en el juego de copias de seguridad
+número de archivo de datos de entrada=00010 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSAUX01.DBF
+número de archivo de datos de entrada=00009 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\XEPDB1\SYSTEM01.DBF
+número de archivo de datos de entrada=00011 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\XEPDB1\UNDOTBS01.DBF
+número de archivo de datos de entrada=00012 nombre=C:\APP\JOSSI\PRODUCT\21C\ORADATA\XE\XEPDB1\USERS01.DBF
+canal ORA_DISK_1: iniciando parte 1 en 18/11/22
+canal ORA_DISK_1: finalizando parte 1 en 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\6M1D4K7N_214_1_1 etiqueta=TAG20221118T105703 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:35
+Se ha finalizado backup a las 18/11/22
+
+Empezando Control File and SPFILE Autobackup a las 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\C-2979950771-20221118-03 comentario=NONE
+Se ha finalizado Control File and SPFILE Autobackup a las 18/11/22
+
+Recovery Manager terminado.

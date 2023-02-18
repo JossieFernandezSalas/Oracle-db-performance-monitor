@@ -1,0 +1,1 @@
+RMAN TARGET / @fileControl.rman log=backupControl.log

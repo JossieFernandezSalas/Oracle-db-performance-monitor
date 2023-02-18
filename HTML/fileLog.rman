@@ -1,0 +1,4 @@
+run {
+backup archivelog all
+SKIP INACCESSIBLE;
+}

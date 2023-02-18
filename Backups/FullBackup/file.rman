@@ -1,0 +1,5 @@
+run {
+backup database
+SKIP INACCESSIBLE
+SKIP OFFLINE;
+}

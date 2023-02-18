@@ -1,0 +1,1 @@
+RMAN TARGET / @file.rman log=backup.log

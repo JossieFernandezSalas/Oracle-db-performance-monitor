@@ -1,0 +1,31 @@
+
+Recovery Manager : Release 21.0.0.0.0 - Production on Vie Nov 18 10:31:01 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+conectado a la base de datos de destino: XE (DBID=2979950771)
+
+RMAN> run {
+2> backup current controlfile
+3> SKIP INACCESSIBLE;
+4> }
+5> 
+Empezando backup a las 18/11/22
+se utiliza el archivo de control de la base de datos destino en lugar del catálogo de recuperación
+canal asignado: ORA_DISK_1
+canal ORA_DISK_1: SID=24 tipo de dispositivo=DISK
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archivo de datos completo
+canal ORA_DISK_1: especificando archivo(s) de datos en el juego de copias de seguridad
+incluyendo el archivo de control actual en el juego de copias de seguridad
+canal ORA_DISK_1: iniciando parte 1 en 18/11/22
+canal ORA_DISK_1: finalizando parte 1 en 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\6G1D4IJB_208_1_1 etiqueta=TAG20221118T103107 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:04
+Se ha finalizado backup a las 18/11/22
+
+Empezando Control File and SPFILE Autobackup a las 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\C-2979950771-20221118-01 comentario=NONE
+Se ha finalizado Control File and SPFILE Autobackup a las 18/11/22
+
+Recovery Manager terminado.

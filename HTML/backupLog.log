@@ -1,0 +1,57 @@
+
+Recovery Manager : Release 21.0.0.0.0 - Production on Vie Nov 18 10:29:06 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+
+conectado a la base de datos de destino: XE (DBID=2979950771)
+
+RMAN> run {
+2> backup archivelog all
+3> SKIP INACCESSIBLE;
+4> }
+5> 
+Empezando backup a las 18/11/22
+log actual archivado
+se utiliza el archivo de control de la base de datos destino en lugar del catálogo de recuperación
+canal asignado: ORA_DISK_1
+canal ORA_DISK_1: SID=25 tipo de dispositivo=DISK
+canal ORA_DISK_1: iniciando juego de copias de seguridad de archive log
+canal ORA_DISK_1: especificando archive log(s) en el juego de copias de seguridad
+thread de archive log de entrada=1 secuencia=119 RECID=22 STAMP=1121010829
+thread de archive log de entrada=1 secuencia=120 RECID=23 STAMP=1121011178
+thread de archive log de entrada=1 secuencia=121 RECID=24 STAMP=1121011544
+thread de archive log de entrada=1 secuencia=122 RECID=25 STAMP=1121011778
+thread de archive log de entrada=1 secuencia=123 RECID=26 STAMP=1121012023
+thread de archive log de entrada=1 secuencia=124 RECID=27 STAMP=1121012258
+thread de archive log de entrada=1 secuencia=125 RECID=28 STAMP=1121012625
+thread de archive log de entrada=1 secuencia=126 RECID=29 STAMP=1121013991
+thread de archive log de entrada=1 secuencia=127 RECID=30 STAMP=1121014600
+thread de archive log de entrada=1 secuencia=128 RECID=31 STAMP=1121014983
+thread de archive log de entrada=1 secuencia=129 RECID=32 STAMP=1121015541
+thread de archive log de entrada=1 secuencia=130 RECID=33 STAMP=1121016065
+thread de archive log de entrada=1 secuencia=131 RECID=34 STAMP=1121017314
+thread de archive log de entrada=1 secuencia=132 RECID=35 STAMP=1121018187
+thread de archive log de entrada=1 secuencia=133 RECID=36 STAMP=1121020506
+thread de archive log de entrada=1 secuencia=134 RECID=37 STAMP=1121022175
+thread de archive log de entrada=1 secuencia=135 RECID=38 STAMP=1121022208
+thread de archive log de entrada=1 secuencia=136 RECID=39 STAMP=1121022294
+thread de archive log de entrada=1 secuencia=137 RECID=40 STAMP=1121022583
+thread de archive log de entrada=1 secuencia=138 RECID=41 STAMP=1121022655
+thread de archive log de entrada=1 secuencia=139 RECID=42 STAMP=1121028498
+thread de archive log de entrada=1 secuencia=140 RECID=43 STAMP=1121028617
+thread de archive log de entrada=1 secuencia=141 RECID=44 STAMP=1121029239
+thread de archive log de entrada=1 secuencia=142 RECID=45 STAMP=1121029685
+thread de archive log de entrada=1 secuencia=143 RECID=46 STAMP=1121029991
+thread de archive log de entrada=1 secuencia=144 RECID=47 STAMP=1121077759
+canal ORA_DISK_1: iniciando parte 1 en 18/11/22
+canal ORA_DISK_1: finalizando parte 1 en 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\6E1D4IG6_206_1_1 etiqueta=TAG20221118T102922 comentario=NONE
+canal ORA_DISK_1: juego de copias de seguridad terminado, tiempo transcurrido: 00:00:47
+Se ha finalizado backup a las 18/11/22
+
+Empezando Control File and SPFILE Autobackup a las 18/11/22
+manejador de parte=C:\APP\JOSSI\PRODUCT\21C\DBHOMEXE\DATABASE\C-2979950771-20221118-00 comentario=NONE
+Se ha finalizado Control File and SPFILE Autobackup a las 18/11/22
+
+Recovery Manager terminado.
